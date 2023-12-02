@@ -6,8 +6,26 @@
     <title>Document</title>
   </head>
   <body>
+    <div
+      id="key"
+      style="
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        border: 3px solid black;
+      "
+    ></div>
+
     <script>
-      const color = a =
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "a") {
+          document.getElementById("key").style.backgroundColor = "pink";
+        } else if (event.key === "s") {
+          document.getElementById("key").style.backgroundColor = "orange";
+        } else if (event.key === "d") {
+          document.getElementById("key").style.backgroundColor = "aqua";
+        }
+      });
     </script>
   </body>
 </html>
