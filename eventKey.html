@@ -34,11 +34,16 @@
         if (event.key === "q") {
           agregarElemento();
 
-          // } else if (event.key === "d" || event.key === "D") {
+          //  solo para en el caso de querer eliminarlo
+          // } else if (event.key === "d") {
           //   // Si es "D" o "d", llamamos a la función eliminarElemento
           //   eliminarElemento();
         }
       });
+
+      // sacado de la guia de estudio
+
+      // se agrega el div pero no logro darle el alto y ancho de 200px
       function agregarElemento() {
         // Obtenemos el elemento contenedor por su ID
         container = document.getElementById("container");
