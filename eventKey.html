@@ -34,9 +34,9 @@
         if (event.key === "q") {
           agregarElemento();
         } else if (event.key === "w") {
-          agregarElemento();
+          agregarElemento2();
         } else if (event.key === "e") {
-          agregarElemento();
+          agregarElemento3();
         }
       });
 
@@ -45,7 +45,24 @@
         newElement = document.createElement("div");
         newElement.style.backgroundColor = "purple";
         newElement.style.width = "200px";
-        newElement.style.heigth = "200px";
+        newElement.style.height = "200px";
+        container.appendChild(newElement);
+      }
+
+      function agregarElemento2() {
+        container = document.getElementById("container");
+        newElement = document.createElement("div");
+        newElement.style.backgroundColor = "grey";
+        newElement.style.width = "200px";
+        newElement.style.height = "200px";
+        container.appendChild(newElement);
+      }
+      function agregarElemento3() {
+        container = document.getElementById("container");
+        newElement = document.createElement("div");
+        newElement.style.backgroundColor = "brown";
+        newElement.style.width = "200px";
+        newElement.style.height = "200px";
         container.appendChild(newElement);
       }
     </script>
